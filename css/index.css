@@ -1,0 +1,27 @@
+
+.table-cont{
+    width: 65vw;
+    font-family: 'Roboto Mono', monospace;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+th{
+    border: 1px solid #000; 
+    text-align: center;
+
+}
+
+td{
+    border: 1px solid #000; 
+    text-align: right;
+}
+
+tfoot{
+    border: 1px solid #000; 
+    text-align: right;
+}
