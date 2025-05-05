@@ -19,6 +19,9 @@ table_row_key.forEach(e => {
     const input = document.createElement('input');
     input.type = `text$`;
     input.placeholder = `i_${e}`;
+    input.style.maxWidth = '80%';
+    input.style.marginRight = '.4rem';
+    input.style.marginLeft = '.4rem';
     tr.insertCell().appendChild(input);
 });
 

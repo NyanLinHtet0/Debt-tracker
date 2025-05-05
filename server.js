@@ -13,7 +13,19 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'html/index.html'))
 })
+
+app.get('/html/ice', (req, res) => {
+    res.sendFile(path.join(__dirname, 'html/ice.html'))
+})
+app.get('/html/diesel', (req, res) => {
+    res.sendFile(path.join(__dirname, 'html/diesel.html'))
+})
+app.get('/html/engine_oil', (req, res) => {
+    res.sendFile(path.join(__dirname, 'html/engine_oil.html'))
+})
+
+
   
-app.listen(port, () => {
+app.listen(port,'0.0.0.0', () => {
     console.log(`Example app listening on port ${port}`)
 })
