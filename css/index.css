@@ -13,22 +13,32 @@ body{
 
 
 /* --------------------MENU content  START ---------------------------------------*/
+.menu_button_outside_cont{
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
 .menu_button_outside{
     /* Position */
     position:relative;
     z-index: 100;
     display:flex;
-    grid-column: 2;
-    grid-row: 1;
-    font-size: 3rem;
+
+    font-size: 2.5rem;
     align-self: center; 
+    line-height: 2.2rem; 
+
     
 
 
     /* Sizing */
     width:fit-content;
     height: fit-content;
-    padding: 0rem .7rem 0rem 0.7rem;
+    padding: 0rem .4rem 0rem 0.4rem;
 
 
 
@@ -70,10 +80,11 @@ body{
 /* --------------------TABLE content  START ---------------------------------------*/
 
 .table-cont{
-    width: 65vw;
+    width: 100%;
     font-family: 'Roboto Mono', monospace;
     grid-column: 1;
     grid-row: 2;
+    overflow: hidden;
 }
 
 table{

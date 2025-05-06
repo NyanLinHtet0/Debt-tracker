@@ -8,7 +8,9 @@
 
 </head>
 <body class = "grid-container">
-    <div class="menu_button_outside" id = "menu_button_outside_id"> ≡ </div>
+    <div class="menu_button_outside_cont">
+        <div class="menu_button_outside" id = "menu_button_outside_id"> ≡ </div>
+    </div>
     <!-- <div class = "page-menu-cont" id = "page_menu_cont" >
         <div class="menu_button_inside" id = "menu_button_inside_id"> ≡ </div>
         <a href="/" class = "page_header_obj">Home Page</a>
@@ -17,32 +19,35 @@
         <a href="/html/engine_oil" class = "page_header_obj">Engine Oil</a>
     </div> -->
 
+    <div class="table-cont">
+        <table id="debt-table">
+            <thead>
+            <tr>
+                <th rowspan="2">Date</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Ice</th>
+                <th colspan="2">Diesel</th>
+                <th colspan="2">Engine Oil (U)</th>
+                <th rowspan="2">Total</th>
+            </tr>
+            <tr>    
+                <th>Ice Amount</th>
+                <th>Kyat/Ice</th>
+                <th>Diesel Amount</th>
+                <th>Kyat/Diesel</th>
+                <th>Engine Oil (U) Amount</th>
+                <th>Kyat/Engine Oil (U)</th>
+            </tr>
+            
+            </thead>
+            <tbody>
+    
+            </tbody>
+            <tfoot id = "debt-input-field">
+            </tfoot>
+        </table>    
+    </div>
 
-    <table id="debt-table" class = "table-cont">
-        <thead>
-        <tr>
-            <th rowspan="2">Date</th>
-            <th rowspan="2">Name</th>
-            <th colspan="2">Ice</th>
-            <th colspan="2">Diesel</th>
-            <th colspan="2">Engine Oil (U)</th>
-            <th rowspan="2">Total</th>
-        </tr>
-        <tr>    
-            <th>Ice Amount</th>
-            <th>Kyat/Ice</th>
-            <th>Diesel Amount</th>
-            <th>Kyat/Diesel</th>
-            <th>Engine Oil (U) Amount</th>
-            <th>Kyat/Engine Oil (U)</th>
-        </tr>
-        
-        </thead>
-        <tbody>
-
-        </tbody>
-        <tfoot id = "debt-input-field">
-        </tfoot>
   <script src="/js/index.js"></script>
 </body>
 </html>
