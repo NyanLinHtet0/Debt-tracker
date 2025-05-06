@@ -22,6 +22,7 @@ table_row_key.forEach(e => {
     input.style.maxWidth = '80%';
     input.style.marginRight = '.4rem';
     input.style.marginLeft = '.4rem';
+    input.style.backgroundColor = 'rgb(255, 255, 255)';
     tr.insertCell().appendChild(input);
 });
 

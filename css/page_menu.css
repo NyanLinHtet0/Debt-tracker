@@ -1,0 +1,101 @@
+/* --------------------MENU content  START ---------------------------------------*/
+.menu_button_outside_cont{
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.menu_button_outside{
+    /* Position */
+    position:relative;
+    z-index: 100;
+    display:flex;
+    align-self: center; 
+    /* Sizing */
+    font-size: 2.5rem;
+    line-height: 2.2rem; 
+    padding: 0rem .4rem 0rem 0.4rem;
+    /* Beautify */
+    font-family: sans-serif; 
+    font-weight: bold;
+    background-color:#253d55;
+    border-radius: 10px 10px 10px 10px;
+    color: rgb(215, 215, 215);
+}
+.page-menu-cont {
+    position: fixed;
+    left: 78vw;
+    width: 20vw;
+    height: fit-content;
+    display: none;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: rgba(126, 156, 150, 0.95);
+    /* align-items: center; */
+    padding: 1rem 1rem 1rem 1rem;
+    border-style: solid;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.page_header_link{
+    display: block;
+    width: 8rem;
+    font-size: 1.5rem;
+    padding: .5rem .5rem;
+    background-color: #253d55;
+    color: aliceblue;
+    border-radius: 10px 10px 10px 10px;
+    margin: 0.5rem;
+    position: relative;
+    text-align: center;
+}
+
+.menu_button_inside:hover,.menu_button_outside:hover,.page_header_link:hover  {
+    transform: scale(1.1);
+    transition: transform 0.15s ease-in-out;
+    cursor:pointer;
+}
+
+.menu_button_inside{
+    /* Position */
+    position:relative;
+    z-index: 100;
+    display: inline-block;
+    align-self: flex-start;
+    /* Sizing */
+    font-size: 2.5rem;
+    line-height: 2.2rem; 
+    padding: 0rem .4rem 0rem 0.4rem;
+    /* Beautify */
+    font-family: sans-serif; 
+    font-weight: bold;
+    background-color:beige;
+    border-radius: 10px 10px 10px 10px;
+    max-width: fit-content;
+}
+
+
+/* Animation key frames*/
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+.animate_fade_in{
+    animation: fadeIn .125s ease-in-out both;
+}
+
+.animate_fade_out{
+    animation: fadeOut .125s ease-in-out forwards;
+}
+
+
