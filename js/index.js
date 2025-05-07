@@ -18,10 +18,11 @@ const table_row_key =['date','name','ice_amt','ice_type','diesel_amt','diesel_ty
 table_row_key.forEach(e => {
     const input = document.createElement('input');
     input.type = `text$`;
-    input.placeholder = `i_${e}`;
-    input.style.maxWidth = '80%';
+    input.placeholder = `${e}`;
+    input.style.maxWidth = '50%';
     input.style.marginRight = '.4rem';
     input.style.marginLeft = '.4rem';
+    input.style.textAlign = 'right';
     input.style.backgroundColor = 'rgb(255, 255, 255)';
     tr.insertCell().appendChild(input);
 });
